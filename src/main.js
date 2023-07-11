@@ -4,22 +4,22 @@
 //import { cumulativeAverageUnit } from "./CumulativeAverageUnit.js";
 
 
-var learningRate = 0.95;
+let learningRate = 0.9;
 // Describes the first unit or batch
-var batch = {
+let batch = {
     units: 1,
-    completionCost: 500,  // could be hours, days, seconds or even in monetary units like dollar
+    completionCost: 1600,  // could be hours, days, seconds or even in monetary units like dollar
     measurement: 'hours'    // provides more information about the kind of data the cost of completion is. Could be hours, minutes, seconds or money symbols
 }
 
 
-var length = 7;
-var table = cumulativeAverageUnit(batch, learningRate, length, false);
-var htmlTable = document.getElementById('learning-effect-table');
+let length = 7;
+let table = cumulativeAverageUnit(batch, learningRate, length);
+let htmlTable = document.getElementById('learning-effect-table');
 
 
 // Append the data in the table object to the html table
-for (var i = 0; i < table.cumulativeUnits.length; ++i) {
+for (let i = 0; i < table.cumulativeUnits.length; ++i) {
     htmlTable.innerHTML += `
         <tr>
             <td>${table.cumulativeUnits[i]}</td>
