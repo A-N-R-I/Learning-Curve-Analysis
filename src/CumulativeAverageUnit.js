@@ -1,7 +1,7 @@
 // The results are generated following the assumption of cumulative average unit
 
 
-// returns a table with repeatedly doubled units by doubled
+// returns a table with repeatedly doubled units by default
 function cumulativeAverageUnit(batch, learningRate, length, double = true) {
 
     let costPerUnit = batch.completionCost / batch.units;
