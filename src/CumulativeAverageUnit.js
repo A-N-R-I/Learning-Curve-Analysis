@@ -1,7 +1,7 @@
 // The results are generated following the assumption of cumulative average unit
 
 
-// returns a table with only doubled units
+// returns a table with repeatedly doubled units by doubled
 function cumulativeAverageUnit(batch, learningRate, length, double = true) {
 
     let costPerUnit = batch.completionCost / batch.units;
@@ -40,9 +40,8 @@ function cumulativeAverageUnit(batch, learningRate, length, double = true) {
 }
 
 
-// Returns the cummulative average unit cost
+// Returns the cummulative average
 function cumulativeAverageOf(targetUnits, unitsPerBatch, costPerUnit, learningRate) {
-    // Determines the cumulative average using a restatement of the popular formula: 
     // Y = aX^(b).
     // Where Y = cumulative average time or cost
     //       a = cost or time for completing one unit
