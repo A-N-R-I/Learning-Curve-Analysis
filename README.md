@@ -1,6 +1,6 @@
 ## Learning Curve Analysis ##
 
-I made This simple program to display the learning effect in the table. I made it as a means of quickly seeing the results, and also to test my  
+I made This simple program to display learning effect in a table. I made it as a means of quickly seeing the results, and also to test my  
 understanding of the topic. It is still unfinished at this stage, and currently, input is directly through code.
 
 Generally, learning curve analysis deals with how the time or cost to perform tasks reduces as the task is being performed repeatedly, due to  
